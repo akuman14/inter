@@ -1,194 +1,372 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Construtora Horizonte | Portfólio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brito&Araujo Engenharia & Construção | Projetando e Construindo o Futuro</title>
+    
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="A Brito&Araujo Engenharia e Construção é referência em obras residenciais, comerciais e industriais. Garantimos qualidade, segurança e cumprimento de prazos. Solicite um orçamento.">
+    <meta name="keywords" content="construtora, engenharia, construção civil, reformas, projetos residenciais, obras comerciais, orçamento de obras">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Google Fonts: Outfit (Títulos) e Inter (Textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons (Ícones minimalistas e modernos via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Link para o CSS customizado -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header" id="topo">
-    <nav class="navbar">
-      <a href="#topo" class="logo">
-        <span>CH</span>
-        Construtora Horizonte
-      </a>
 
-      <button class="menu-toggle" type="button" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#obras">Obras</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Construção civil com qualidade</p>
-        <h1>Projetos bem planejados, obras seguras e acabamento de alto padrão.</h1>
-        <p>
-          Atendemos obras residenciais, comerciais e reformas completas com equipe especializada,
-          prazos organizados e comunicação clara em cada etapa.
-        </p>
-        <div class="hero-actions">
-          <a href="#obras" class="btn primary">Ver obras</a>
-          <a href="#contato" class="btn secondary">Fale conosco</a>
+    <!-- CABEÇALHO / NAVEGAÇÃO -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i data-lucide="hard-hat" class="logo-icon"></i>
+                <span>Brito&<span>Araujo</span></span>
+            </a>
+            
+            <!-- Menu Desktop -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Quem Somos</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link">Obras</a></li>
+                    <li><a href="#contato" class="btn btn-primary btn-sm">Orçamento</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Botão do Menu Mobile (Hambúrguer) -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="stats" aria-label="Números da empresa">
-      <div>
-        <strong>12+</strong>
-        <span>Anos de experiência</span>
-      </div>
-      <div>
-        <strong>180+</strong>
-        <span>Projetos entregues</span>
-      </div>
-      <div>
-        <strong>35</strong>
-        <span>Profissionais parceiros</span>
-      </div>
-      <div>
-        <strong>98%</strong>
-        <span>Clientes satisfeitos</span>
-      </div>
-    </section>
+    <main>
+        
+        <!-- SEÇÃO HERO (BANNER PRINCIPAL) -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-overlay"></div>
+            <div class="hero-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Engenharia e Construção de Alto Padrão</span>
+                    <h1>Construindo o seu futuro com <span>solidez</span> e precisão.</h1>
+                    <p>Do planejamento à entrega das chaves, transformamos projetos em realidade com foco em excelência, cumprimento estrito de prazos e máxima segurança.</p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">Conheça Nossas Obras</a>
+                        <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section about" id="sobre">
-      <div class="section-text">
-        <p class="eyebrow">Sobre a empresa</p>
-        <h2>Construímos com responsabilidade do início ao fim.</h2>
-        <p>
-          A Construtora Horizonte atua no planejamento e execução de obras com foco em segurança,
-          organização e qualidade. Nosso trabalho une acompanhamento técnico, materiais adequados
-          e uma equipe preparada para entregar resultados duráveis.
-        </p>
-        <p>
-          Cada projeto é tratado de forma personalizada, respeitando o orçamento, o prazo e as
-          necessidades de quem vai usar o espaço.
-        </p>
-      </div>
-      <div class="about-panel">
-        <h3>Nossos diferenciais</h3>
-        <ul>
-          <li>Planejamento de obra detalhado</li>
-          <li>Equipe técnica qualificada</li>
-          <li>Acompanhamento em todas as etapas</li>
-          <li>Compromisso com prazo e acabamento</li>
-        </ul>
-      </div>
-    </section>
+        <!-- SEÇÃO QUEM SOMOS (SOBRE) -->
+        <section class="about-section" id="sobre">
+            <div class="container about-container">
+                <div class="about-image-wrapper">
+                    <!-- Detalhe decorativo com gradiente e borda flutuante -->
+                    <div class="image-box">
+                        <img src="assets/hero.png" alt="Construção Moderna da Brito&Araujo" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80'">
+                        <div class="experience-badge">
+                            <span class="exp-number">15</span>
+                            <span class="exp-text">Anos de<br>Experiência</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <span class="section-subtitle">Sobre Nós</span>
+                    <h2>Compromisso com a qualidade em cada detalhe</h2>
+                    <p>Fundada sob a premissa de revolucionar a construção civil, a <strong>Brito&Araujo Engenharia</strong> se destaca pela entrega de soluções construtivas completas. Trabalhamos com uma equipe de engenheiros e arquitetos altamente capacitados.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <div>
+                                <h3>Segurança Total</h3>
+                                <p>Seguimos rigorosamente todas as normas regulamentadoras de segurança (NRs).</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div>
+                                <h3>Pontualidade</h3>
+                                <p>Garantia de cronograma cumprido e relatórios de progresso periódicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section services" id="servicos">
-      <div class="section-heading">
-        <p class="eyebrow">Serviços</p>
-        <h2>Soluções completas para sua obra</h2>
-      </div>
 
-      <div class="service-grid">
-        <article class="service-card">
-          <span>01</span>
-          <h3>Construção residencial</h3>
-          <p>Casas e sobrados executados com estrutura segura, bom acabamento e orientação técnica.</p>
-        </article>
-        <article class="service-card">
-          <span>02</span>
-          <h3>Reformas completas</h3>
-          <p>Modernização de ambientes, ampliação de espaços e melhorias estruturais planejadas.</p>
-        </article>
-        <article class="service-card">
-          <span>03</span>
-          <h3>Obras comerciais</h3>
-          <p>Execução de lojas, escritórios e espaços corporativos com foco em funcionalidade.</p>
-        </article>
-        <article class="service-card">
-          <span>04</span>
-          <h3>Acabamento</h3>
-          <p>Assentamento, pintura, revestimentos e detalhes finais para valorizar cada projeto.</p>
-        </article>
-      </div>
-    </section>
+        <!-- SEÇÃO SERVIÇOS -->
+        <section class="services-section" id="servicos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">O que fazemos</span>
+                    <h2>Nossos Serviços Especializados</h2>
+                    <p>Oferecemos suporte em todas as etapas da sua obra, desde a fundação até o acabamento fino.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i data-lucide="home"></i>
+                        </div>
+                        <h3>Construção Residencial</h3>
+                        <p>Casas de alto padrão e condomínios fechados, focando em conforto, design e sustentabilidade.</p>
+                    </div>
+                    
+                    <!-- Serviço 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <h3>Construção Comercial</h3>
+                        <p>Edifícios comerciais, galpões industriais e escritórios projetados para a eficiência do seu negócio.</p>
+                    </div>
+                    
+                    <!-- Serviço 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i data-lucide="hammer"></i>
+                        </div>
+                        <h3>Reformas Gerais</h3>
+                        <p>Revitalização de fachadas, retrofit, ampliações e acabamentos refinados com alto controle de qualidade.</p>
+                    </div>
+                    
+                    <!-- Serviço 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-box">
+                            <i data-lucide="drafting-compass"></i>
+                        </div>
+                        <h3>Gerenciamento de Obras</h3>
+                        <p>Supervisão técnica, controle orçamentário rígido e gestão de fornecedores para total tranquilidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="section projects" id="obras">
-      <div class="section-heading">
-        <p class="eyebrow">Portfólio</p>
-        <h2>Obras recentes</h2>
-      </div>
+        <!-- SEÇÃO PORTFÓLIO (GALERIA DE OBRAS) -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Portfólio</span>
+                    <h2>Obras Recentes e Destaques</h2>
+                    <p>Explore alguns dos projetos de engenharia e construção entregues com excelência aos nossos clientes.</p>
+                </div>
+                
+                <!-- Filtros de Obras -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todas as Obras</button>
+                    <button class="filter-btn" data-filter="residencial">Residencial</button>
+                    <button class="filter-btn" data-filter="comercial">Comercial</button>
+                    <button class="filter-btn" data-filter="reformas">Reformas</button>
+                </div>
+                
+                <!-- Grid de Obras -->
+                <div class="portfolio-grid">
+                    <!-- Obra 1 (Residencial) -->
+                    <div class="portfolio-card" data-category="residencial">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Residência Alphaville">
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category-tag">Residencial</span>
+                            <h3>Residência Alphaville</h3>
+                            <p>Casa moderna minimalista com 420m² de área construída.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Obra 2 (Comercial) -->
+                    <div class="portfolio-card" data-category="comercial">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Edifício Corporate Tower">
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category-tag">Comercial</span>
+                            <h3>Edifício Corporate Tower</h3>
+                            <p>Fachada em pele de vidro e infraestrutura corporativa integrada.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Obra 3 (Reformas) -->
+                    <div class="portfolio-card" data-category="reformas">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Retrofit Shopping Center">
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category-tag">Reformas / Retrofit</span>
+                            <h3>Retrofit Shopping Center</h3>
+                            <p>Revitalização estrutural e estética de praça de alimentação.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Obra 4 (Residencial) -->
+                    <div class="portfolio-card" data-category="residencial">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Villa Sunset">
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category-tag">Residencial</span>
+                            <h3>Villa Sunset</h3>
+                            <p>Integração total com a natureza e captação de energia solar.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Obra 5 (Comercial) -->
+                    <div class="portfolio-card" data-category="comercial">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=600&q=80" alt="Galpão Industrial CD-03">
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category-tag">Comercial / Industrial</span>
+                            <h3>Centro de Distribuição</h3>
+                            <p>Galpão com estrutura metálica e piso industrial de alta resistência.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Obra 6 (Reformas) -->
+                    <div class="portfolio-card" data-category="reformas">
+                        <div class="portfolio-img-box">
+                            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&w=600&q=80" alt="Reforma Escritório Tech">
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="category-tag">Reformas</span>
+                            <h3>Escritório Tech</h3>
+                            <p>Modernização de ambiente corporativo para conceito aberto (Open Office).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SEÇÃO ORÇAMENTO / CONTATO -->
+        <section class="contact-section" id="contato">
+            <div class="container contact-container">
+                <div class="contact-info-panel">
+                    <span class="section-subtitle">Fale Conosco</span>
+                    <h2>Pronto para iniciar seu projeto?</h2>
+                    <p>Entre em contato com nossa equipe para solicitar seu orçamento. Retornaremos em até 24 horas.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <h4>Telefone / WhatsApp</h4>
+                                <p>(11) 98781-5229 - Cristiane<br><a href="https://wa.link/ng6g9x" target="_blank" rel="noopener noreferrer">(11) 95705-3258 - Fabiana</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <h4>E-mail comercial</h4>
+                                <p>britoearaujoconstrutora@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h4>Endereço Principal</h4>
+                                <p>Rua Antônio Vieira, 147 - Casa Verde Alta - São Paulo/SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-logo-panel">
+                    <img src="assets/logo-brito-araujo.svg" alt="Logo Brito & Araújo Construtora">
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Casa moderna construída pela empresa">
-          <div>
-            <h3>Residência moderna</h3>
-            <p>Construção completa com fachada contemporânea e acabamento premium.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Equipe trabalhando em obra estrutural">
-          <div>
-            <h3>Obra estrutural</h3>
-            <p>Execução de fundação, alvenaria e cobertura com controle técnico.</p>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80" alt="Prédio comercial finalizado">
-          <div>
-            <h3>Espaço comercial</h3>
-            <p>Projeto para empresa local com ambientes amplos e fachada funcional.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section contact" id="contato">
-      <div class="contact-info">
-        <p class="eyebrow">Contato</p>
-        <h2>Vamos conversar sobre sua obra?</h2>
-        <p>Solicite um orçamento e receba uma proposta alinhada ao seu projeto.</p>
-        <div class="contact-list">
-          <a href="tel:+5511999999999">(11) 99999-9999</a>
-          <a href="mailto:contato@construtorahorizonte.com">contato@construtorahorizonte.com</a>
-          <span>Rua das Obras, 120 - Centro</span>
+    <!-- RODAPÉ (FOOTER) -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo">
+                    <i data-lucide="hard-hat" class="logo-icon"></i>
+                    <span>Brito&<span>Araujo</span></span>
+                </a>
+                <p>Construindo soluções sólidas e inovadoras para empreendimentos residenciais e corporativos. Garantia de qualidade em cada m².</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Página Inicial</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio de Obras</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col contact-col">
+                <h3>Atendimento</h3>
+                <p>Segunda a Sexta: 08h às 18h</p>
+                <p>Sábado: 08h às 12h</p>
+                <p class="highlight-info"><i data-lucide="phone"></i> (11) 98781-5229 - Cristiane</p>
+                <p class="highlight-info"><i data-lucide="phone"></i> <a href="https://wa.link/ng6g9x" target="_blank" rel="noopener noreferrer">(11) 95705-3258 - Fabiana</a></p>
+                <p class="highlight-info"><i data-lucide="mail"></i> britoearaujoconstrutora@gmail.com</p>
+            </div>
         </div>
-      </div>
+        
+        <div class="footer-bottom">
+            <div class="container bottom-container">
+                <p>&copy; 2026 Brito&Araujo Engenharia & Construção. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Fernando</p>
+            </div>
+        </div>
+    </footer>
 
-      <form class="contact-form">
-        <label>
-          Nome
-          <input type="text" name="nome" placeholder="Seu nome" required>
-        </label>
-        <label>
-          E-mail
-          <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
-        </label>
-        <label>
-          Mensagem
-          <textarea name="mensagem" rows="5" placeholder="Conte um pouco sobre o projeto" required></textarea>
-        </label>
-        <button class="btn primary" type="submit">Enviar mensagem</button>
-        <p class="form-message" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
+    <!-- Notificação Flutuante (Toast) para envio do formulário -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle" class="toast-icon"></i>
+            <div class="toast-message">
+                <h4>Solicitação Enviada!</h4>
+                <p>Retornaremos o contato em breve.</p>
+            </div>
+        </div>
+    </div>
 
-  <footer class="footer">
-    <p>&copy; 2026 Construtora Horizonte. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <!-- Inicialização dos ícones do Lucide no final do arquivo -->
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
